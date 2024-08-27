@@ -137,6 +137,10 @@ nav {
     font-size: 15px;
     width: 150px;
 }
+
+.info .btn-cs:hover {
+    background-color: #0056b3;
+}
 /* Fin Perfil */
 
 /* Educacion */
