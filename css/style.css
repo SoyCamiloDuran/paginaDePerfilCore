@@ -1,0 +1,227 @@
+* {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.global{
+    display: flex;
+    padding: 20px;
+    gap: 15px;
+}
+
+/* Posicion */
+.contenido-izq{
+    flex: 3;
+}
+
+.contenido-dcho{
+    flex: 1;
+}
+/* Fin Posicion */
+
+/* Border */
+.perfil, .educacion {
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+}
+
+.solicitudes, .conexiones {
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+}
+
+/* Fin Border */
+
+/* Navegacion */
+nav {
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 20px;
+}
+
+.nav-izq a {
+    font-size: 30px;
+    text-decoration: none;
+    color: white;
+}
+
+.nav-dcho a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.nav-dcho a:hover{
+    color: #0056b3;
+}
+
+.nav-dcho .btn-cs {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.nav-dcho .btn-cs:hover {
+    background-color: #0056b3;
+}
+/* Fin Navegacion */
+
+/* Perfil */
+.perfil {
+    padding: 50px;
+    background: #ffffff;
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.perfil::before {
+    content: "";
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    height: 100px;
+    z-index: 1;
+    border-radius: 10px 10px 0 0;
+    background: #007bff;
+}
+
+.foto-perfil img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    z-index: 10;
+    border: 8px solid #fff;
+    position: absolute;
+}
+
+.foto-perfil img {
+    transform: translate(-8%, -8%);
+}
+
+.info {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 150px;
+    flex-direction: column;
+}
+
+.info h2 {
+    margin-bottom: 20px;
+}
+
+.info .descripcion {
+    margin: 20px 0 10px 0;
+    text-align: justify;
+}
+
+.info button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+    width: 150px;
+}
+/* Fin Perfil */
+
+/* Educacion */
+.educacion {
+    padding: 20px;
+}
+
+.educacion h3 {
+    margin-bottom: 20px;
+}
+
+.educacion p {
+    margin: 5px 5px 5px 0;
+}
+/* Fin Educacion */
+
+/* Solicitud */
+.solicitudes h3 {
+    text-align: center;
+}
+
+.solicitud {
+    display: flex;
+    padding: 10px;
+    justify-content: space-evenly;
+}
+
+.solicitud-info{
+    display: flex;
+    width: 200px;
+}
+
+.solicitud p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+}
+
+.solicitud img {
+    width: 50px;
+}
+
+img[alt="voto"] {
+    margin-left: 50px;
+}
+/* Fin Solicitud */
+
+/* Conexiones */
+.conexiones h3 {
+    text-align: center;
+}
+
+.conexion {
+    display: flex;
+    padding: 10px;
+
+}
+
+.conexion p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+}
+
+.conexiones img {
+    width: 50px;
+}
+/* Fin Conexiones */
+
+@media screen and (max-width: 768px) {
+    .nav-dcho {
+        display: none;
+    }
+    .nav-izq {
+        text-align: center; 
+    }
+
+    .global{
+        display: inline;
+    }
+
+    .contenido-izq, .contenido-dcho{
+        margin: 10px;
+        padding-left: 0;
+    } 
+}
