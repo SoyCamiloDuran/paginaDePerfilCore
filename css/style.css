@@ -21,20 +21,12 @@
 /* Fin Posicion */
 
 /* Border */
-.perfil, .educacion {
+.perfil, .educacion, .solicitudes, .conexiones {
     margin-bottom: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 10px;
 }
-
-.solicitudes, .conexiones {
-    margin-bottom: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 10px;
-}
-
 /* Fin Border */
 
 /* Navegacion */
@@ -70,10 +62,6 @@ nav {
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
-}
-
-.nav-dcho .btn-cs:hover {
-    background-color: #0056b3;
 }
 /* Fin Navegacion */
 
@@ -127,11 +115,18 @@ nav {
     background-color: #007bff;
     color: white;
     border: none;
-    padding: 10px 20px;
+    padding: 10px;
     border-radius: 5px;
     cursor: pointer;
     font-size: 15px;
-    width: 150px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info button img{
+    margin-right: 10px;
 }
 
 .info .btn-cs:hover {
